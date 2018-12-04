@@ -8,5 +8,5 @@ build: test
 	go build
 
 infra:
-  cd provisions && terraform apply && cd ../
+	cd provisions && terraform apply && cd ../
 
