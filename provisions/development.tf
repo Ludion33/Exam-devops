@@ -9,7 +9,7 @@ resource "heroku_app" "development" {
 
 # Couple development app to development pipeline stage
 resource "heroku_pipeline_coupling" "development" {
-  app      = "${heroku_app.production.name}"
+  app      = "${heroku_app.development.name}"
   pipeline = "${heroku_pipeline.devops-app-exam.id}"
   stage    = "development"
 }
