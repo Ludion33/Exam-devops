@@ -1,5 +1,5 @@
 start:
-	go run
+	go run main.go
 
 test:
 	cd handler && go test && cd ../
